@@ -22,7 +22,9 @@
 </div>
 <div id="image-container" style="text-align: center; margin: 0 auto;"></div>
 <script>
-  var images = new Array("jinx.jpg", "kizmet.jpg", "PlubCat.jpg", "mikesdog.png", "axelrosa.png");
+  var images = new Array("jinx.jpg", "kizmet.jpg", "danscat.png", "mikesdog.png");
+
+function addImage() {
   var index = Math.floor(Math.random() * images.length); 
   var img = document.createElement("img");
   img.src = images[index]; 
