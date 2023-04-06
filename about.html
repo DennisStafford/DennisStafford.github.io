@@ -4,9 +4,9 @@
   img{
   margin: 30px 60px;
   }
-  body {
-  background: rgba(120, 70, 0, 0.76);
-  }
+        body {
+            background: rgba(120, 70, 0, 0.76);
+        }
 </style>
 <body>
 <a href="index.html">
@@ -14,3 +14,28 @@
   <img src="Tw0eeOOzCVs (3).png" alt="title" style="width:35%">
 </div>
 </a>  
+<div style="background-color: #7D684D; text-align: center; max-width: 30%; margin: 0 auto; border: 6px solid #372219;">
+  <font size="+12"> Our Mission:</font> <br>
+   <font size="+6"> We are committed to helping animals wherever, whenever, and however possible. We seek to make a positive impact in our local community</font>
+</br>
+</div>
+<div id="image-container" style="text-align: center; margin: 0 auto;"></div>
+<script>
+  var images = new Array("jinx.jpg", "kizmet.jpg", "danscat.png", "mikesdog.png");
+
+function addImage() {
+  var index = Math.floor(Math.random() * images.length); 
+  var img = document.createElement("img");
+  img.src = images[index]; 
+  img.width = 500;
+  var container = document.getElementById("image-container");
+  if (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+  container.appendChild(img);
+}
+
+
+setInterval(addImage, 1000);
+
+</script>
